@@ -1,11 +1,11 @@
 # bandits/main.py
 import numpy as np
 from collections import OrderedDict
-from Bandits.bernoulli_bandit import BernoulliBandit
-from Bandits.epsilon import EpsilonGreedyAgent
-from Bandits.ucb import UCBAgent
-from Bandits.thompson import ThompsonSamplingAgent
-from Bandits.plots import plot_regret
+from bernoulli_bandit import BernoulliBandit
+from epsilon import EpsilonGreedyAgent
+from ucb import UCBAgent
+from thompson import ThompsonSamplingAgent
+from plots import plot_regret
 import matplotlib.pyplot as plt
 
 def get_regret(env, agents, n_steps=10_000, n_trials=100):
