@@ -1,7 +1,7 @@
 # bandits/main.py
 import numpy as np
 from collections import OrderedDict
-from bernoulli_bandit import BernoulliBandit
+from ddd import BernoulliBandit
 from epsilon import EpsilonGreedyAgent
 from ucb import UCBAgent
 from thompson import ThompsonSamplingAgent
