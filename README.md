@@ -62,7 +62,7 @@ The code is organized into distinct modules to improve readability, maintainabil
 
                 $\qquad n_{a_t} = n_{a_t} + 1$
 
-               $\hat{\theta}_{a_t} = \hat{\theta}_{a_t} + \frac{1}{n_{a_t}}(r_t - \hat{\theta}_{a_t})$
+               $\hat{\theta} = \hat{\theta} + \frac{1}{n}(r_t - \hat{\theta})$
 
 
         **Variables:**
@@ -95,7 +95,7 @@ The code is organized into distinct modules to improve readability, maintainabil
 
                 $\qquad n_{a_t} = n_{a_t} + 1$
 
-               ${\theta}_{a_t} = {\theta}_{a_t} + \frac{1}{n_{a_t}}(r_t - {\theta}_{a_t})$
+                $\hat{\theta} = \hat{\theta} + \frac{1}{n}(r_t - \hat{\theta})$
 
 
         **Variables:**
