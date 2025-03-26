@@ -1,7 +1,7 @@
 # bandits/ucb.py
 import numpy as np
 import math
-from Bandits.abstract_agent import AbstractAgent
+from abstract_agent import AbstractAgent
 # from abc import ABCMeta, abstractmethod, abstractproperty
 
 class UCBAgent(AbstractAgent):

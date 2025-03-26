@@ -1,7 +1,7 @@
 # bandits/epsilon.py
 import numpy as np
-from bandits.bernoulli_bandit import BernoulliBandit
-from bandits.abstract_agent import AbstractAgent
+from bernoulli_bandit import BernoulliBandit
+from abstract_agent import AbstractAgent
 # from abc import ABCMeta, abstractmethod, abstractproperty # Added import to abstract_agent.py
 
 
