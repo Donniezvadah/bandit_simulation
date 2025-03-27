@@ -22,4 +22,8 @@ def plot_regret(agents, scores):
     plt.grid(False) #Added gridlines
     plt.show()
     
+    plt.savefig("regret.png")
+    plt.savefig("regret.pdf")
+    
+    
     
