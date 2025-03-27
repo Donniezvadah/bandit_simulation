@@ -13,11 +13,13 @@ def plot_regret(agents, scores):
         scores (OrderedDict): An OrderedDict where keys are agent names and values are lists of cumulative regret.
     """
     for agent in agents:
-        plt.plot(scores[agent.name])
+        plt.plot(scores[agent.name], linewidth=1)
 
     plt.legend([agent.name for agent in agents])
     plt.ylabel("Regret")
-    plt.xlabel("Steps")
+    plt.xlabel(r"$T$")
     plt.title("Cumulative Regret vs. Steps")  # Added a title
-    plt.grid(True) #Added gridlines
+    plt.grid(False) #Added gridlines
     plt.show()
+    
+    

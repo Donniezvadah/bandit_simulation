@@ -1,10 +1,10 @@
 # bandits/tests/test_agents.py
 import unittest
 import numpy as np
-from bandits.bernoulli_bandit import BernoulliBandit
-from bandits.epsilon import EpsilonGreedyAgent
-from bandits.ucb import UCBAgent
-from bandits.thompson import ThompsonSamplingAgent
+from bernoulli_bandit import BernoulliBandit
+from epsilon import EpsilonGreedyAgent
+from ucb import UCBAgent
+from thompson import ThompsonSamplingAgent
 
 
 class TestAgents(unittest.TestCase):

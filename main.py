@@ -1,14 +1,14 @@
 # bandits/main.py
 import numpy as np
 from collections import OrderedDict
-from ddd import BernoulliBandit
+from bernoulli_bandit import BernoulliBandit
 from epsilon import EpsilonGreedyAgent
 from ucb import UCBAgent
 from thompson import ThompsonSamplingAgent
 from plots import plot_regret
 import matplotlib.pyplot as plt
 
-def get_regret(env, agents, n_steps=10_000, n_trials=100):
+def get_regret(env, agents, n_steps=10_000, n_trials=10):
     """
     Simulates the multi-armed bandit problem for a given environment and a set of agents.
 
@@ -65,10 +65,12 @@ def main():
     ]
 
     # Run the simulation and get the regret scores
-    regret = get_regret(bandit, agents, n_steps=10000, n_trials=10)
+    regret = get_regret(bandit, agents, n_steps=100_000, n_trials=10)
 
     # Plot the regret
     plot_regret(agents, regret)
+    plt.show()
+    
 
 
 
