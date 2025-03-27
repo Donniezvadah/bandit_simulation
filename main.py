@@ -69,9 +69,12 @@ def main():
 
     # Plot the regret
     plot_regret(agents, regret)
-    plt.show()
+    # Save the figures first
     plt.savefig("regret.png")
     plt.savefig("regret.pdf")
+    # Show and then close the plot
+    plt.show()
+    plt.close()
     
     
 
