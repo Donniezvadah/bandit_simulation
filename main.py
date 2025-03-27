@@ -8,7 +8,7 @@ from thompson import ThompsonSamplingAgent
 from plots import plot_regret
 import matplotlib.pyplot as plt
 
-def get_regret(env, agents, n_steps=10_000, n_trials=10):
+def get_regret(env, agents, n_steps=2_000, n_trials=10):
     """
     Simulates the multi-armed bandit problem for a given environment and a set of agents.
 
@@ -29,7 +29,7 @@ def get_regret(env, agents, n_steps=10_000, n_trials=10):
         env.reset()
 
         for agent in agents:
-            agent.init_actions(env.action_count)
+            agent.init_actions(env.action_count) # Get regret gets 1 env and 1 agent at a time . More clean code 
 
         for i in range(n_steps):
             optimal_reward = env.optimal_reward()
@@ -65,7 +65,7 @@ def main():
     ]
 
     # Run the simulation and get the regret scores
-    regret = get_regret(bandit, agents, n_steps=100_000, n_trials=10)
+    regret = get_regret(bandit, agents, n_steps=2000, n_trials=5) 
 
     # Plot the regret
     plot_regret(agents, regret)
