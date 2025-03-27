@@ -70,6 +70,9 @@ def main():
     # Plot the regret
     plot_regret(agents, regret)
     plt.show()
+    plt.savefig("regret.png")
+    plt.savefig("regret.pdf")
+    
     
 
 
