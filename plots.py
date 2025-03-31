@@ -16,9 +16,9 @@ def plot_regret(agents, scores):
         plt.plot(scores[agent.name], linewidth=1)
 
     plt.legend([agent.name for agent in agents])
-    plt.ylabel("Regret")
+    plt.ylabel("Expected Cumulative Regret")
     plt.xlabel(r"$T$")
-    plt.title("Cumulative Regret vs. Steps")  # Added a title
+    plt.title("Expected Cumulative Regret vs. Steps")  # Added a title
     plt.grid(False) #Added gridlines
     plt.show()
     
